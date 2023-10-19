@@ -1,0 +1,14 @@
+.footerContainer {
+    width: 100vw;
+    text-align: center;
+    padding: .4rem;
+    background-color: rgb(134, 39, 75);
+    color: #fff;
+}
+
+/* --------------768px--------------- */
+@media ( min-width: 768px ) {
+    .footerContainer {
+        font-size: 1.2rem;
+    }
+}

@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .4rem .8rem;
+    padding: .4rem 1.2rem;
 }
 
 .cartContainerField1,
@@ -56,6 +56,7 @@
 .cartContainerField3 {
     display: flex;
     justify-content: flex-end;
+    position: relative;
 }
 
 .cartContainerField3 img {
@@ -65,10 +66,22 @@
 
 .cartContainerField3 span {
     position: absolute;
-    top: 0px;
-    right: 3px;
+    top: -6px;
+    right: -12px;
     color: var(--color-white);
     padding: 2px;
     height: fit-content;
     font-size: .9rem;
+}
+
+/* ------------------768px-------------------- */
+@media ( min-width: 768px ) {
+    .cartContainer {
+        justify-content: space-around;
+    }
+
+    .cartContainerField2 {
+        /* display: none; */
+        width: fit-content;
+    }
 }

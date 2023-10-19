@@ -1,0 +1,74 @@
+:root {
+    --color-white: #fff;
+}
+
+/* -------------cartContainer------------ */
+.cartContainer {
+    width: 100vw;
+    height: 66px;
+    margin: auto;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .4rem .8rem;
+}
+
+.cartContainerField1,
+.cartContainerField3 {
+    width: 26%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* -----------cartContainerField1---------- */
+.cartContainerField1 a {
+    text-decoration: none;
+    color: var(--color-white);
+    padding: .0rem .4rem;
+    padding-top: .1rem;
+    display: block;
+    font-size: 1.4rem;
+    box-shadow: 0px 0px 6px #712929;
+    border-radius: 6px;
+}
+
+/* -------------cartContainerField2------------- */
+.cartContainerField2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cartContainerField2 a {
+    text-decoration: none;
+}
+
+.cartContainerField2 h1 {
+    font-size: 1.8rem;
+    color: var(--color-white);
+}
+
+/* -------------cartContainerField3------------- */
+.cartContainerField3 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cartContainerField3 img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.cartContainerField3 span {
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    color: var(--color-white);
+    padding: 2px;
+    height: fit-content;
+    font-size: .9rem;
+}

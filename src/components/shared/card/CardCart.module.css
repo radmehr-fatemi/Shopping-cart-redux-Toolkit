@@ -53,6 +53,13 @@
     color: var(--color-white);
     border-radius: 6px;
     animation: Show .2s;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.cardField2Buttons button:hover {
+    background-color: #ff4444;
+    transition: all .3s;
 }
 
 .cardField2 img {

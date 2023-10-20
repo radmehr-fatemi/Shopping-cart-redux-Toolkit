@@ -65,6 +65,13 @@
     color: var(--color-white);
     border-radius: 4px;
     animation: Show2 .1s;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.detailsField2 button:hover {
+    background-color: #ff2f2f;
+    transition: all .3s;
 }
 
 .detailsField2Buttons {

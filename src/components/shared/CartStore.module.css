@@ -40,6 +40,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    transition: all .3s;
 }
 
 .cartStoreField2 button {
@@ -49,4 +50,45 @@
     padding: .2rem;
     border-radius: 4px;
     color: var(--color-white);
+    animation: Show2 .1s;
+}
+
+.cartStoreField2Buttons {
+    width: 100%;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartStoreField2Buttons button {
+    width: 40px;
+    height: 100%;
+    animation: Show .1s;
+    padding:.1rem;
+}
+
+.cartStoreField2Buttons span {
+    padding: 0 .2rem;
+    margin: 0 .2rem;
+    border-bottom: 1px solid var(--color-red);
+}
+
+.cartStoreField2Buttons img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------keyframes---------------- */
+@keyframes Show {
+    0% {
+        width: 10%;
+        height: 10px;
+    }
+}
+@keyframes Show2 {
+    0% {
+        width: 10%;
+        height: 40px;
+    }
 }

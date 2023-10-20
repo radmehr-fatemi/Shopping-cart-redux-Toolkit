@@ -71,11 +71,20 @@
 .navbarContainerField3 span {
     position: absolute;
     top: -6px;
-    right: -12px;
+    right: -10px;
     color: var(--color-white);
     padding: 2px;
     height: fit-content;
     font-size: .9rem;
+    animation: Show .22s;
+}
+
+/* --------------keyframes---------------- */
+@keyframes Show {
+    0% {
+        top: 0;
+        right: 0;
+    }
 }
 
 /* ------------------768px-------------------- */

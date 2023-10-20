@@ -26,7 +26,7 @@ const ProductDetails = () => {
     const selectedItems = useSelector(store => store.cart.selectedItems);
 
     useEffect(() => {
-        dispatch(fetchProductsData())
+         !products.length && dispatch(fetchProductsData())
     }, []);
 
 

@@ -17,7 +17,7 @@ const Store = () => {
     const { data: products, loading, error } = useSelector(store => store.products)
 
     useEffect(() => {
-        dispatch(fetchProductsData())
+        !products.length && dispatch(fetchProductsData())
     }, []);
 
     if (loading) return <SpinnerLoader />

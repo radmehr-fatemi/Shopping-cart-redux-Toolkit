@@ -1,29 +1,32 @@
 :root {
     --color-white: #fff;
+    --color-purple: #FF0000;
 }
 
-/* -------------cartContainer------------ */
-.cartContainer {
+/* -------------navbarContainer------------ */
+.navbarContainer {
     width: 100vw;
     height: 66px;
     margin: auto;
-    background-color: red;
+    background-color: var(--color-purple);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: .4rem 1.2rem;
+    position: sticky;
+    top: 0;
 }
 
-.cartContainerField1,
-.cartContainerField3 {
+.navbarContainerField1,
+.navbarContainerField3 {
     width: 26%;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-/* -----------cartContainerField1---------- */
-.cartContainerField1 a {
+/* -----------navbarContainerField1---------- */
+.navbarContainerField1 a {
     text-decoration: none;
     color: var(--color-white);
     padding: .0rem .4rem;
@@ -34,37 +37,38 @@
     border-radius: 6px;
 }
 
-/* -------------cartContainerField2------------- */
-.cartContainerField2 {
+/* -------------navbarContainerField2------------- */
+.navbarContainerField2 {
     height: 100%;
-    width: 50%;
+    width: 54%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.cartContainerField2 a {
+.navbarContainerField2 a {
     text-decoration: none;
 }
 
-.cartContainerField2 h1 {
+.navbarContainerField2 h1 {
     font-size: 1.8rem;
     color: var(--color-white);
 }
 
-/* -------------cartContainerField3------------- */
-.cartContainerField3 {
+/* -------------navbarContainerField3------------- */
+.navbarContainerField3 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end ;
     position: relative;
+    margin-right: .4rem;
 }
 
-.cartContainerField3 img {
+.navbarContainerField3 img {
     width: 30px;
     cursor: pointer;
 }
 
-.cartContainerField3 span {
+.navbarContainerField3 span {
     position: absolute;
     top: -6px;
     right: -12px;
@@ -76,11 +80,11 @@
 
 /* ------------------768px-------------------- */
 @media ( min-width: 768px ) {
-    .cartContainer {
+    .navbarContainer {
         justify-content: space-around;
     }
 
-    .cartContainerField2 {
+    .navbarContainerField2 {
         /* display: none; */
         width: fit-content;
     }

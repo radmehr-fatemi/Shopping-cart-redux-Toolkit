@@ -1,0 +1,52 @@
+:root {
+    --color-green:#07a01e;
+    --color-red:#EA0000;
+    --color-white:#fff;
+    --color-shadow:#666;
+}
+
+.cartStore {
+    margin:.4rem;
+    box-shadow: 2px 2px 6px var(--color-shadow);
+    padding: .4rem;
+    height: 220px;
+    border-radius: 8px;
+}
+
+
+.cartStore img {
+    width: 140px;
+    height: 50%;
+}
+
+/* ------------cartStoreField1----------- */
+.cartStoreField1 {
+    height: 20%;
+}
+
+.cartStoreField1 p {
+    /* font-size: .9rem; */
+    margin: .3rem 0;
+}
+
+.cartStoreField1 span {
+    color: var(--color-green);
+}
+
+/* -------------cartStoreField2----------- */
+.cartStoreField2 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.cartStoreField2 button {
+    width: 80%;
+    border: none;
+    background-color: var(--color-red);
+    padding: .2rem;
+    border-radius: 4px;
+    color: var(--color-white);
+}

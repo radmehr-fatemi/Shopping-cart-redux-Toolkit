@@ -1,0 +1,11 @@
+.spinnerLoader {
+    height: 100vh;
+    padding: 2rem;
+    margin: auto;
+}
+
+@media ( min-width: 768px ) {
+    .spinnerLoader {
+        width: 50vw;
+    }
+}

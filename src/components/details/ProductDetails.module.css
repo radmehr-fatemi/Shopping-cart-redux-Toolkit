@@ -6,16 +6,18 @@
 }
 
 .details {
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 1rem;
     text-align: center;
 }
 
 .detailsIMG img {
-    width: 200px;
+    width: 180px;
+    height: 200px;
 } 
 
 
@@ -43,6 +45,10 @@
 
 .detailsField1Price span {
     color: rgb(6, 168, 6);
+}
+
+.detailsField1Price p {
+    font-size: .84rem;
 }
 
 /* -----------detailsField2----------- */

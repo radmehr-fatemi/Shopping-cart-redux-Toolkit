@@ -7,7 +7,7 @@
 
 .cart {
     width: 100vw;
-    min-height: 86vh;
+    min-height: 80vh;
     padding: 0 2rem;
     transition: all .3s;
 }

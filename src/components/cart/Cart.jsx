@@ -54,9 +54,8 @@ const Cart = () => {
             </div>
 
             <div className={styled.field3} >
-
                 {
-                    checkout ?
+                    !checkout && itemsCounter < 1 ?
                         <button disabled style={{ background: "#8bb191" }} >Checkout</button> :
                         <button onClick={ () => dispatch( CHECKOUT() ) } >Checkout</button>
                 }

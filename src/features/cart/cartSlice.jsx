@@ -41,6 +41,7 @@ const cartSlice = createSlice({
             if (state.selectedItems.some(item => item.id === action.payload.id)) {
                 const indexD = state.selectedItems.findIndex(item => item.id === action.payload.id)
                 state.selectedItems[indexD].quantity > 1 && state.selectedItems[indexD].quantity--
+                state.checkout = false
                 state.itemsCounter = totalCounter( state ).itemsCounter
                 state.total = totalCounter( state ).total
             }
@@ -50,6 +51,7 @@ const cartSlice = createSlice({
             if (state.selectedItems.some(item => item.id === action.payload.id)) {
                 const indexR = state.selectedItems.findIndex(item => item.id === action.payload.id)
                 state.selectedItems.splice(indexR, 1)
+                state.checkout = false
                 state.itemsCounter = totalCounter( state ).itemsCounter
                 state.total = totalCounter( state ).total
             }

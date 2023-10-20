@@ -58,7 +58,6 @@ const ProductDetails = () => {
                 </div>
 
                 <div className={styled.detailsField2} >
-                    {console.log(findQuantity(id, selectedItems))}
                     {
                         findQuantity(id, selectedItems) == 0 ?
                             <button onClick={() => dispatch(ADD_ITEM(product))} > Add to cart </button> :

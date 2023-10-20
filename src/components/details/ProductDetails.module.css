@@ -2,7 +2,6 @@
     --color-green:#07a01e;
     --color-red:#EA0000;
     --color-white:#fff;
-    --color-shadow:#666;
 }
 
 .details {
@@ -13,6 +12,7 @@
     justify-content: space-between;
     padding: 1rem;
     text-align: center;
+    animation: Show3 .6s;
 }
 
 .detailsIMG img {
@@ -44,7 +44,7 @@
 }
 
 .detailsField1Price span {
-    color: rgb(6, 168, 6);
+    color: var(--color-green)
 }
 
 .detailsField1Price p {
@@ -101,6 +101,11 @@
     0% {
         width: 10%;
         height: 40px;
+    }
+}
+@keyframes Show3 {
+    0% {
+        height: 0;
     }
 }
 

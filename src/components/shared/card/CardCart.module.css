@@ -1,0 +1,80 @@
+:root {
+    --color-green:#07a01e;
+    --color-red:#EA0000;
+    --color-white:#fff;
+    --color-shadow:#666;
+}
+
+.cardCart {
+    width: 90%;
+    padding: .4rem;
+    border-top: 1px solid #ceb3b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardCart img {
+    width: 70px;
+    height: 70px;
+}
+
+/* ---------cardField1------- */
+.cardField1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .4rem;
+}
+
+.cardField1 p {
+    font-weight: 700;
+}
+
+.cardField1 span {
+    color: var(--color-green);
+}
+
+/* ----------cardField2---------- */
+.cardField2 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardField2Buttons button {
+    height: 40px;
+    width: 40px;
+    padding: .1rem;
+    border: none;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 6px;
+    animation: Show .2s;
+}
+
+.cardField2 img {
+    width: 22px;
+    height: 22px;
+}
+
+.cardField2Buttons {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardField2Buttons span {
+    font-size: 1.2rem;
+    margin-top: .4rem;
+}
+/* ---------------keyframes---------------- */
+@keyframes Show {
+    0% {
+        width: 10%;
+    }
+}

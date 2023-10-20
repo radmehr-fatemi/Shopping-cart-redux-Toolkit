@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 
 //Style
-import styled from "./CartStore.module.css";
+import styled from "./CardStore.module.css";
 
 //function
 import { shortHandler, findQuantity } from "../functions";
@@ -23,7 +23,7 @@ const CartStore = ({ product }) => {
     return (
         <div className={styled.cartStore} >
 
-            <Link to={`/products/${id}`} >
+            <Link to={`/details/${id}`} >
                 <img src={image} alt="product photo" />
             </Link>
 

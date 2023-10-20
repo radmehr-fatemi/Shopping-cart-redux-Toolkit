@@ -9,7 +9,7 @@ import { fetchProductsData } from '../../features/products/productsDataSlice';
 
 //Component
 import SpinnerLoader from '../shared/spinner/SpinnerLoader';
-import CartStore from '../shared/card/CartStore';
+import CartStore from '../shared/card/CardStore';
 
 const Store = () => {
 
@@ -21,7 +21,7 @@ const Store = () => {
     }, []);
 
     if (loading) return <SpinnerLoader />
-    if (error) return <h1>Error...</h1>
+    if (error) return  <h1>Error...<SpinnerLoader /></h1>
 
     if (products.length) return <div className={styled.storeContainer} style={{ maxWidth: "1600px" }} >
 

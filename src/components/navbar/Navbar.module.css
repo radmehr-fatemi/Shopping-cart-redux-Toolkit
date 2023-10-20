@@ -7,7 +7,7 @@
 .navbarContainer {
     width: 100vw;
     height: 66px;
-    margin: auto;
+    margin:0 auto;
     background-color: var(--color-purple);
     display: flex;
     justify-content: space-between;

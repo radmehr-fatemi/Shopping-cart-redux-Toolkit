@@ -8,8 +8,8 @@ import styled from "./Store.module.css";
 import { fetchProductsData } from '../../features/products/productsDataSlice';
 
 //Component
-import SpinnerLoader from '../shared/SpinnerLoader';
-import CartStore from '../shared/CartStore';
+import SpinnerLoader from '../shared/spinner/SpinnerLoader';
+import CartStore from '../shared/card/CartStore';
 
 const Store = () => {
 

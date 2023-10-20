@@ -1,0 +1,111 @@
+:root {
+    --color-green:#07a01e;
+    --color-red:#EA0000;
+    --color-white:#fff;
+    --color-shadow:#666;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    text-align: center;
+}
+
+.detailsIMG img {
+    width: 200px;
+} 
+
+
+.detailsField {
+    width: 100%;
+}
+
+/* ------------detailsField1--------- */
+.detailsField1 {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.detailsField1Title h3 {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.detailsField1Title span {
+    color: #8d8080;
+    font-size: .8rem;
+}
+
+.detailsField1Price span {
+    color: rgb(6, 168, 6);
+}
+
+/* -----------detailsField2----------- */
+.detailsField2 {
+    width: 100%;
+    height: 26px;
+    }
+
+.detailsField2 button {
+    width: 80%;
+    height: 100%;
+    border: none;
+    background-color:var(--color-red) ;
+    color: var(--color-white);
+    border-radius: 4px;
+    animation: Show2 .1s;
+}
+
+.detailsField2Buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.detailsField2Buttons img {
+    width: 22px;
+}
+
+.detailsField2Buttons button {
+    width: 40px;
+    height: 100%;
+    animation: Show .1s;
+}
+
+.detailsField2Buttons span {
+    padding: 0 .4rem;
+    margin: 0 .4rem;
+    border-bottom: 2px solid var(--color-red);
+}
+/* ---------------keyframes---------------- */
+@keyframes Show {
+    0% {
+        width: 10%;
+        height: 10px;
+    }
+}
+@keyframes Show2 {
+    0% {
+        width: 10%;
+        height: 40px;
+    }
+}
+
+/* ------------------768px-------------- */
+@media ( min-width: 768px ) {
+
+    .detailsField2 button {
+        width: 200px;
+    }
+
+    .detailsField2Buttons button {
+        width: 60px;
+    }
+}

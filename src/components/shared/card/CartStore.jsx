@@ -6,13 +6,13 @@ import { useSelector, useDispatch } from 'react-redux';
 import styled from "./CartStore.module.css";
 
 //function
-import { shortHandler, findQuantity } from './functions';
+import { shortHandler, findQuantity } from "../functions";
 
 //action
-import { ADD_ITEM, CHECKOUT, CLEAR, DECREASE, INCREASE, REMOVE_ITEM } from '../../features/cart/cartSlice';
+import { ADD_ITEM, CHECKOUT, CLEAR, DECREASE, INCREASE, REMOVE_ITEM } from '../../../features/cart/cartSlice';
 
 //ICON
-import trashSVG from "../../assets/svg/trash.svg";
+import trashSVG from "../../../assets/svg/trash.svg";
 
 const CartStore = ({ product }) => {
 

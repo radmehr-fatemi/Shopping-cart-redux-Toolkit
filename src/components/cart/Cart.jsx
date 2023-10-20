@@ -50,7 +50,7 @@ const Cart = () => {
 
             <div className={styled.field2} >
                 <h3>Total price :</h3>
-                <span> {total} $ </span>
+                <span> {total.toFixed(2)} $ </span>
             </div>
 
             <div className={styled.field3} >

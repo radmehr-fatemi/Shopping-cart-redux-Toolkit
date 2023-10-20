@@ -33,12 +33,12 @@ const Cart = () => {
         <div className={styled.cards} >
             {
                 itemsCounter > 0 ?
-                 selectedItems.map(item => <CardCart key={item.id} product={item} />) :
+                    selectedItems.map(item => <CardCart key={item.id} product={item} />) :
 
-                 <div className={ styled.cardsEmpty } >
-                    <h3> You're shopping cart in empty </h3>
-                    <Link to="/" > Got to Store </Link>
-                 </div>
+                    <div className={styled.cardsEmpty} >
+                        <h3> You're shopping cart in empty </h3>
+                        <Link to="/" > Got to Store </Link>
+                    </div>
             }
         </div>
 
@@ -54,10 +54,12 @@ const Cart = () => {
             </div>
 
             <div className={styled.field3} >
+                { console.log( checkout ,itemsCounter ) }
                 {
-                    !checkout && itemsCounter < 1 ?
+                    checkout &&
+                        itemsCounter < 1 ?
                         <button disabled style={{ background: "#8bb191" }} >Checkout</button> :
-                        <button onClick={ () => dispatch( CHECKOUT() ) } >Checkout</button>
+                        <button onClick={() => dispatch(CHECKOUT())} >Checkout</button>
                 }
             </div>
         </div>

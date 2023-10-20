@@ -1,14 +1,15 @@
 :root {
-    --color-green:#07a01e;
-    --color-red:#EA0000;
-    --color-white:#fff;
-    --color-shadow:#947575;
+    --color-green: #07a01e;
+    --color-red: #EA0000;
+    --color-white: #fff;
+    --color-shadow: #cec9c9;
 }
 
 .cart {
     width: 100vw;
     min-height: 86vh;
     padding: 0 2rem;
+    transition: all .3s;
 }
 
 /* ----------cartHeader--------- */
@@ -17,23 +18,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: .2rem 0;
 }
 
 .cartHeader img {
     width: 26px;
+    cursor: pointer;
 }
 
 /* ------cards------ */
 .cards {
     width: 100%;
     height: 50vh;
-    box-shadow: 0px 0px 12px  var(--color-shadow) inset;
+    box-shadow: 0px 0px 12px var(--color-shadow) inset;
     border-radius: 6px;
     overflow: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+.cards::-webkit-scrollbar {
+    width: 10px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background: var(--color-red2);
+    border-radius: 50px;
+}
+
+.cards::-webkit-scrollbar-thumb:hover {
+    background: var(--color-red);
+    transition: all .3s;
 }
 
 .fields {
@@ -43,12 +60,13 @@
 
 /* -------field1-------- */
 /* -------field2-------- */
-.field1,.field2 {
+.field1,
+.field2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.4rem 0;
+    padding: .6rem 0;
     border-bottom: 1px solid var(--color-shadow);
 }
 
@@ -64,8 +82,9 @@
 /* --------field3------- */
 .field3 {
     width: 100%;
-    padding: 1rem;
+    padding: .6rem;
     text-align: center;
+    transition: all .3s;
 }
 
 .field3 button {
@@ -76,4 +95,48 @@
     background-color: var(--color-green);
     color: var(--color-white);
     font-size: 1.4rem;
+    transition: all .3s;
+}
+
+.field3 button:hover {
+    background-color: #01ba1d;
+}
+
+/* ------------cardsEmpty--------------- */
+.cardsEmpty {
+    margin: auto;
+    text-align: center;
+    transition: all .3s;
+}
+
+.cardsEmpty h3 {
+    margin-bottom: .4rem;
+}
+
+.cardsEmpty a {
+    text-decoration: none;
+    color: var(--color-green);
+    padding: .1rem 2rem;
+    border: 1px solid var(--color-green);
+    border-radius: 4px;
+}
+
+.cardsEmpty a:hover {
+    color: #01ba1d;
+    border: 1px solid #01ba1d;
+    transition: all .3s;
+}
+
+/* --------------------7680x------------------ */
+@media (min-width: 768px) {
+
+    .cart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cartHeader {
+        display: none;
+    }
 }

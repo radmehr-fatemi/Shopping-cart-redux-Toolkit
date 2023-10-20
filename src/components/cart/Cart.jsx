@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //Style
 import styled from "./Cart.module.css";
@@ -10,7 +11,7 @@ import arrowBackSVG from "../../assets/svg/arrow-back.svg";
 import trashSVG from "../../assets/svg/trash-black.svg";
 
 //action
-import { CLEAR } from '../../features/cart/cartSlice';
+import { CHECKOUT, CLEAR } from '../../features/cart/cartSlice';
 
 //Component
 import CardCart from '../shared/card/CardCart';
@@ -31,7 +32,13 @@ const Cart = () => {
 
         <div className={styled.cards} >
             {
-                !!itemsCounter && selectedItems.map(item => <CardCart key={item.id} product={item} />)
+                itemsCounter > 0 ?
+                 selectedItems.map(item => <CardCart key={item.id} product={item} />) :
+
+                 <div className={ styled.cardsEmpty } >
+                    <h3> You're shopping cart in empty </h3>
+                    <Link to="/" > Got to Store </Link>
+                 </div>
             }
         </div>
 
@@ -47,10 +54,11 @@ const Cart = () => {
             </div>
 
             <div className={styled.field3} >
+
                 {
                     checkout ?
-                        <button disabled >Checkout</button> :
-                        <button onCanPlay={ () => dispatch( checkout ) } >Checkout</button>
+                        <button disabled style={{ background: "#8bb191" }} >Checkout</button> :
+                        <button onClick={ () => dispatch( CHECKOUT() ) } >Checkout</button>
                 }
             </div>
         </div>

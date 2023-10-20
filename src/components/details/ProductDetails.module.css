@@ -5,7 +5,7 @@
 }
 
 .details {
-    min-height: 80vh;
+    min-height: calc( 100vh - 103px );
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -15,6 +15,7 @@ import { CHECKOUT, CLEAR } from '../../features/cart/cartSlice';
 
 //Component
 import CardCart from '../shared/card/CardCart';
+import ScrollToTop from '../shared/ScrollToTop';
 
 const Cart = () => {
 
@@ -54,7 +55,7 @@ const Cart = () => {
             </div>
 
             <div className={styled.field3} >
-                { console.log( checkout ,itemsCounter ) }
+                {console.log(checkout, itemsCounter)}
                 {
                     checkout || itemsCounter == 0 ?
                         <button disabled style={{ background: "#8bb191" }} >Checkout</button> :
@@ -62,7 +63,7 @@ const Cart = () => {
                 }
             </div>
         </div>
-
+        <ScrollToTop />
     </div>
 };
 

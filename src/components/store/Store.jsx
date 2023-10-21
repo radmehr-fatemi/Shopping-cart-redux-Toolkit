@@ -10,6 +10,7 @@ import { fetchProductsData } from '../../features/products/productsDataSlice';
 //Component
 import SpinnerLoader from '../shared/spinner/SpinnerLoader';
 import CartStore from '../shared/card/CardStore';
+import ScrollToTop from '../shared/ScrollToTop';
 
 const Store = () => {
 
@@ -46,7 +47,7 @@ const Store = () => {
         </div>
         
         <div className={styled.storeContainerField} >
-            <h1> Popular : </h1>
+            <h1> Best selling : </h1>
 
             <div className={styled.cards} >
                 {
@@ -54,6 +55,7 @@ const Store = () => {
                 }
             </div>
         </div>
+        <ScrollToTop />
     </div>
 };
 
